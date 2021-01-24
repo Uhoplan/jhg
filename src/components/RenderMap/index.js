@@ -9,9 +9,8 @@ export const RenderMap = (props) => {
   return (
     <YMaps>
       <Map
-        className="map-container"
-        defaultState={{ zoom: 4 }}
-        state={{ center: mapCenter }}
+        className="map-container"       
+        state={{ zoom: 4, center: mapCenter }}
       >
         {points_list.map((item, index) => {
           return (
